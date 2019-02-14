@@ -17,10 +17,10 @@ exports.post = async (req, res, next) => {
     else
     {
 		const { stdout, stderr, err } = await exec(
-			'cd ' + process.env.PROJECT_PATH + ' && '
+			'cd ' + process.env.PROJECT_PATH + ' && git fetch && '
 			+ 'git pull ' + process.env.REMOTE + ' ' 
 			+ process.env.BRANCH)
-
+		
 		// Caso de error, imprime na tela
 		if (err)
 		{
