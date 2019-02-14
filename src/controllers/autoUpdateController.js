@@ -17,7 +17,7 @@ exports.post = async (req, res, next) => {
     else
     {
 		const { stdout, stderr, err } = await exec(
-			'cd ' + process.env.PROJECT_PATH + ' && git fetch && '
+			process.env.PROJECT_PATH.slice(0, 2) + ' && cd ' + process.env.PROJECT_PATH + ' && git fetch && '
 			+ 'git pull ' + process.env.REMOTE + ' ' 
 			+ process.env.BRANCH)
 		
@@ -29,7 +29,7 @@ exports.post = async (req, res, next) => {
 		}
 
 		if (process.env.APP_DEBUG)
-			console.log('Projeto atualizado')
+			console.log("Projeto atualizado!\n")
 
     }
 	// Envia resposta
