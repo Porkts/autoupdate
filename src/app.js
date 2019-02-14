@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const router = express.Router()
+const bodyParser = require('body-parser');
 
 // Rotas
 const index = require('./routes/index')
@@ -26,6 +27,7 @@ var verifyGitlabToken = (req, res, next) => {
 };
 
 app.use(verifyGitlabToken)
+app.use(bodyParser.json())
 
 app.use('/', index)
 app.use('/autoupdate', autoUpdateRoute)
