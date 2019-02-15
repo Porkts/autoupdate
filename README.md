@@ -5,6 +5,7 @@ O AutoUpdate é uma plataforma desenvolvida com o intuito de facilitar a entrega
 ## Instalação
 
 Para começar, certifique-se que o seu servidor conta com o [nodejs](https://nodejs.org/en/download/) instalado, e adicionado a variável de ambiente PATH (windows)
+
 O primeiro passo é clonar o projeto na sua máquina local usando o seguinte comando:
 ```
 git clone https://gitlabgaeco.mpse.mp.br/everton.recchi/autoupdate.git
