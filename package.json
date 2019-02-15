@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/server.js",
-    "dev": "nodemon ./bin/server.js"
+    "dev": "nodemon ./bin/server.js",
+    "postinstall": "cp .env.example .env",
+    "install-windows-service": "winser -c -i",
+    "uninstall-windows-service": "winser -r -x"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,8 @@
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "is-admin": "^2.1.1"
+    "is-admin": "^2.1.1",
+    "winser": "^1.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
