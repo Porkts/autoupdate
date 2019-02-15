@@ -9,12 +9,12 @@ const autoUpdateRoute = require('./routes/autoUpdateRoute')
 
 // Middleware
 var verifyGitlabToken = (req, res, next) => {
-	if (process.env.APP_DEBUG)
+	if (process.env.APP_DEBUG == 'true')
 		console.log('Nova requisição recebida, verificando token...')
 
 	if (req.header("X-Gitlab-Token") == process.env.GITLAB_TOKEN)
 	{
-		if (process.env.APP_DEBUG)
+		if (process.env.APP_DEBUG == 'true')
 			console.log('Token Aprovado')
     	
     	next()

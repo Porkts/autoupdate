@@ -8,7 +8,7 @@
     "start": "node ./bin/server.js",
     "dev": "nodemon ./bin/server.js",
     "postinstall": "cp .env.example .env",
-    "install-windows-service": "winser -c -i",
+    "install-windows-service": "winser -c -i -a",
     "uninstall-windows-service": "winser -r -x"
   },
   "repository": {
