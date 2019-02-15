@@ -15,4 +15,7 @@ function normalizaPort(val) {
 
 app.listen(port, function () {
     console.log(`Serviço iniciado (porta ${port}). Escutando atualizações...`)
+
+    if (process.env.RESTART_SERVICE)
+    	console.log("Para que o sistema possa reiniciar o servico é necessário ser executado no modo administrador")
 })
