@@ -1,5 +1,5 @@
 # :recycle: AutoUpdate Gitlab Webhook
-O AutoUpdate é uma plataforma desenvolvida com o intuito de facilitar a entrega contínua de software, satisfazendo o [Manisfesto Ágil] (https://pt.wikipedia.org/wiki/Manifesto_%C3%81gil), mais especificamente no seguinte trecho:
+O AutoUpdate é uma plataforma desenvolvida com o intuito de facilitar a entrega contínua de software, satisfazendo o [Manisfesto Ágil](https://pt.wikipedia.org/wiki/Manifesto_%C3%81gil), mais especificamente no seguinte trecho:
 > “Nossa maior prioridade é satisfazer o cliente, por meio da entrega adiantada e contínua de software de valor.”
 
 ## Instalação
